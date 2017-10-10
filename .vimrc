@@ -13,3 +13,6 @@ set laststatus=2
 set list listchars=tab:\>\-
 
 syntax on
+
+set nocompatible
+set backspace=indent,eol,start
