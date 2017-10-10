@@ -12,6 +12,8 @@ set laststatus=2
 
 set list listchars=tab:\>\-
 
+set tabstop=4
+
 syntax on
 
 set nocompatible
