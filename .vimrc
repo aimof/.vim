@@ -16,3 +16,12 @@ syntax on
 
 set nocompatible
 set backspace=indent,eol,start
+
+set incsearch
+set wrapscan
+
+call plug#begin('~/.vim/plugged')
+Plug 'fatih/vim-go'
+call plug#end()
+
+let g:go_fmt_command = "goimports"
