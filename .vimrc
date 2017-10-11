@@ -14,6 +14,7 @@ set list listchars=tab:\>\-
 
 set tabstop=4
 
+"syntax and colorscheme
 syntax on
 
 set nocompatible
@@ -22,16 +23,22 @@ set backspace=indent,eol,start
 set incsearch
 set wrapscan
 
-"plugin
 "curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 call plug#begin('~/.vim/plugged')
-Plug 'fatih/vim-go'
-call plug#end()
+
+"theme monokai
+Plug 'crusoexia/vim-monokai'
 
 "go plugin
-"vim +PlugInstall +q +q
-"vim +GoInstallBinaries +q +q 
+Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
+
+call plug#end()
+
 let g:go_fmt_command = "goimports"
+
+"color scheme
+set t_Co=256
+colorscheme monokai
 
 "filetype settings
 autocmd BufRead,BufNewFile *.py setfiletype python
