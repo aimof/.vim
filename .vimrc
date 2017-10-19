@@ -43,3 +43,4 @@ colorscheme monokai
 "filetype settings
 autocmd BufRead,BufNewFile *.py setfiletype python
 autocmd BufRead,BufNewFile *.go setfiletype go
+autocmd BufRead,BufNewFile *.yml setfiletype yaml

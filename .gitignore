@@ -2,3 +2,5 @@ autoload/plug.vim
 .netrwhist
 plugged/*
 .gitmodules
+*.save.*
+*.save
